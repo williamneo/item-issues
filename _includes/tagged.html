@@ -1,20 +1,22 @@
-{% assign issues = false %}
+{% assign posts = '' | split : '' %}
 {% assign target = include.tag | downcase | replace: ' ', '' | split: ',' %}
-{% for tag in site.tags %}
-  {% assign tagname = tag | first | downcase %}
-  {% if target contains tagname %}
-    {% assign issues = true %}
-    {% for post in tag[1] %}
-      <h2>{{post.title}}</h2>
-      {% if post.image %}
-      <p class="text-center"><img src="http://images.neopets.com/items/{{post.image | split: '.' | first}}.gif"></p>
-      {% endif %}
-      {{post.content}}
-    {% unless forloop.last %}<hr>{% endunless %}
-    {% endfor %}
-  {% endif %}
+{% for tag in target %}
+  {% assign tagname = tag | downcase %}
+  {% assign q = site.tags | map: tagname | first %}
+  {% assign posts = posts | concat: q %}
 {% endfor %}
 
-{% unless issues %}
+{% assign posts = posts | uniq | sort: 'date' | reverse %}
+{% for post in posts %}
+  <h2>{{post.title}}</h2>
+  {% if post.image %}
+  <p class="text-center"><img src="http://images.neopets.com/items/{{post.image | split: '.' | first}}.gif"></p>
+  {% endif %}
+  {{post.content}}
+{% unless forloop.last %}<hr>{% endunless %}
+{% endfor %}
+
+{% assign issues = posts | size %}
+{% unless issues > 0 %}
 <p>There are no issues tagged <code>{{include.tag | split: ',' | join: '</code> or <code>' }}</code>!
 {% endunless %}
