@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<article class="post">
+
+  <div class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      {% if page.categories contains 'blog' %}
+      Posted on {{page.date | date: '%b %d, %Y'}} 
+      <br>
+      {% endif %}
+      <em><strong>Tags:</strong> {{page.categories | concat: page.tags | join: ', '}}</em>
+    </p>
+  </div>
+
+  <div class="post-content">
+    {% if page.image %}
+    <p class="text-center"><img src="http://images.neopets.com/items/{{page.image | split: '.' | first}}.gif"></p>
+    {% endif %}
+    {{ content }}
+  </div>
+  
+  <div class="post-footer">
+    {% if page.modified or page.last_modified %}
+    <strong>Last modified</strong> : {{page.modified | default: page.last_modified | date: '%b %d, %Y'}}
+    <br>
+    {% endif %}
+    <a href="javascript:history.back(1);">&larr; Back</a>
+  </div>
+
+  {% if site.disqus.shortname %}
+    {% include disqus_comments.html %}
+  {% endif %}
+</article>

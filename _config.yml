@@ -1,0 +1,21 @@
+title: Neopets Item Issues Masterlist
+description: >- # this means to ignore newlines until "baseurl:"
+  This is a masterlist of known item issues maintained by
+  <a href="http://www.neopets.com/userlookup.phtml?user=minnesotan">minnesotan</a>.
+repository: williamneo/item-issues
+
+# Build settings
+markdown: kramdown
+sass:
+  style: compressed
+theme: jekyll-theme-modernist
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jemoji
+
+# Content settings
+collections:
+  - fixed
+
+permalink: /:categories/:title/

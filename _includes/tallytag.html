@@ -1,0 +1,9 @@
+{%- assign target = include.tags | replace: ' ', '' | split: ',' -%}
+{%- assign count = 0 -%}
+{%- for tag in site.tags -%}
+  {%- if target contains tag[0] -%}
+  {%- assign posts = tag[1] | size -%}
+  {%- assign count = count | plus: posts -%}
+  {%- endif -%}
+{%- endfor -%}
+{{count}}

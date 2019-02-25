@@ -1,0 +1,31 @@
+{% assign navigation = page.navigation | default: layout.navigation | default: site.navigation | default: site.data.sitemap %}
+{% unless navigation == null or navigation == 'hide' %}
+{% capture data %}
+  {% for link in navigation %}
+    {%- if link.tags and link.nav != false -%}
+      {%- assign target = link.tags | replace: ' ', '' | split: ',' -%}
+      {%- for sitetag in site.tags -%}
+      {%- if target contains sitetag[0] -%}
+        {%- assign count = sitetag[1] | size -%}
+        {%- if count > 0 -%}
+          {{link.text}}~{{link.url}}~{{link.tags}}|
+        {%- endif -%}
+      {%- endif -%}
+      {%- endfor -%}
+    {%- elsif link.nav != false -%} {{link.text}}~{{link.url}}|
+    {%- endif -%}
+  {% endfor %}
+{% endcapture %}
+
+Jump to :
+{% assign data = data | strip | split: '|' %}
+{% for link in data %}
+{% assign linkdata = link | split: '~' %}
+{% if page.url == linkdata[1] %}
+<strong>{{linkdata[0]}}</strong>
+{% else %}
+<a href="{{linkdata[1]}}">{{linkdata[0]}}</a>
+{% endif %}
+{% unless forloop.last %} | {% endunless %}
+{% endfor %}
+{% endunless %}

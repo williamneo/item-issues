@@ -1,0 +1,37 @@
+- text: Home
+  url: /
+  
+- text: About
+  url: /about/
+  nav: false
+
+- text: Name Issues
+  url: /name/
+  tags: name
+
+- text: Category Issues
+  url: /category/
+  tags: category
+
+- text: Description Issues
+  url: /description/
+  tags: description,desc
+
+- text: Activation Issues
+  url: /activation/
+  tags: activation
+  
+- text: Petpet Puddle Issues
+  url: /petpets/
+  tags: petpets
+
+- text: Miscellaneous Issues
+  url: /miscellaneous/
+  tags: miscellaneous,misc
+  nav: false
+
+- text: Fixed Issues
+  url: /fixed/
+
+- text: Sitemap
+  url: /sitemap.html

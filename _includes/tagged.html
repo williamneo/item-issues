@@ -1,0 +1,20 @@
+{% assign issues = false %}
+{% assign target = include.tag | downcase | replace: ' ', '' | split: ',' %}
+{% for tag in site.tags %}
+  {% assign tagname = tag | first | downcase %}
+  {% if target contains tagname %}
+    {% assign issues = true %}
+    {% for post in tag[1] %}
+      <h2>{{post.title}}</h2>
+      {% if post.image %}
+      <p class="text-center"><img src="http://images.neopets.com/items/{{post.image | split: '.' | first}}.gif"></p>
+      {% endif %}
+      {{post.content}}
+    {% unless forloop.last %}<hr>{% endunless %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+
+{% unless issues %}
+<p>There are no issues tagged <code>{{include.tag | split: ',' | join: '</code> or <code>' }}</code>!
+{% endunless %}
