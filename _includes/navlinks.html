@@ -18,14 +18,13 @@
 {% endcapture %}
 
 Jump to :
-{% assign purl = page.url | replace_first: '/', '' %}
 {% assign data = data | strip | split: '|' %}
 {% for link in data %}
 {% assign linkdata = link | split: '~' %}
-{% if purl == linkdata[1] or (purl == '' and linkdata[1] == '.') %}
+{% if page.url == linkdata[1] or (page.url == '/' and linkdata[1] == '.') %}
 <strong>{{linkdata[0]}}</strong>
 {% else %}
-<a href="{{linkdata[1]}}">{{linkdata[0]}}</a>
+<a href="{{linkdata[1] | relative_url }}">{{linkdata[0]}}</a>
 {% endif %}
 {% unless forloop.last %} | {% endunless %}
 {% endfor %}
