@@ -3,6 +3,11 @@
 
 @import "jekyll-theme-modernist";
 
+header p.view {
+    /* please don't use github on your phone */
+    display: none;
+}
+
 p.text-center {
     text-align: center;
 }
