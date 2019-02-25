@@ -1,6 +1,6 @@
 ---
 title: Migrating Off-Site
-date: 2019-02-24 18:38
+date: 2019-02-24 20:38 -0600
 modified: 2019-02-24
 categories: [blog]
 ---
