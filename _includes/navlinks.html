@@ -18,7 +18,7 @@
 {% endcapture %}
 
 Jump to :
-{% assign data = data | strip | split: '|' %}
+{% assign data = data | strip | split: '|' | uniq %}
 {% for link in data %}
 {% assign linkdata = link | split: '~' %}
 {% if page.url == linkdata[1] or (page.url == '/' and linkdata[1] == '.') %}
