@@ -6,6 +6,7 @@ repository: williamneo/item-issues
 baseurl: /item-issues
 
 # Build settings
+timezone: America/Los_Angeles
 markdown: kramdown
 sass:
   style: compressed
