@@ -6,12 +6,10 @@ layout: default
 
   {{ content }}
 
-  {% for category in site.categories %}
-  {% if category[0] == 'blog' %}
   <h1 class="page-heading">Updates</h1>
 
   <div class="post-list">
-    {% for post in category[1] limit:3 %}
+    {% for post in site.categories.blog limit:3 %}
       <div class="post">
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
@@ -23,16 +21,11 @@ layout: default
       </div>
     {% endfor %}
   </div>
-  {% endif %}
-  {% endfor %}
   
-  {% for category in site.categories %}
-  {% assign catname = category | first | downcase %}
-  {% if catname == 'issue' %}
   <h1 class="page-heading">Newest Issues</h1>
   <p>The 5 most recently added issues are:</p>
   <div class="post-list">
-    {% for post in category[1] limit:5 %}
+    {% for post in site.categories.issue limit:5 %}
       <p class="post">
         <strong>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
@@ -42,8 +35,6 @@ layout: default
       </p>
     {% endfor %}
   </div>
-  {% endif %}
-  {% endfor %}
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
