@@ -5,6 +5,10 @@
   url: /about/
   nav: false
 
+- text: Blog Posts
+  url: /blog/
+  nav: false
+
 - text: Name Issues
   url: /name/
   tags: name
