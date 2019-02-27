@@ -1,6 +1,7 @@
-{% assign posts = '' | split : '' %}
-{% assign target = include.tag | downcase | replace: ' ', '' | split: ',' %}
-{% for tag in target %}
+---
+layout: page
+---
+{% for tag in page.tag %}
   {% assign q = site.tags | map: tag | first %}
   {% assign posts = posts | concat: q %}
 {% endfor %}
@@ -17,5 +18,7 @@
 
 {% assign issues = posts | size %}
 {% unless issues > 0 %}
-<p>There are no issues tagged <code>{{include.tag | split: ',' | join: '</code> or <code>' }}</code>!
+<p>There are no issues tagged <code>{{page.tag | join: '</code> or <code>' }}</code>!
 {% endunless %}
+
+{{ content | markdownify }}
