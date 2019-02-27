@@ -2,6 +2,9 @@
 layout: page
 ---
 {% for tag in page.tag %}
+  {% comment %}
+    This next line looks ugly, but if we used site.tags[tag], concat: q would fail on empty tags
+  {% endcomment %}
   {% assign q = site.tags | map: tag | first %}
   {% assign posts = posts | concat: q %}
 {% endfor %}
@@ -21,4 +24,7 @@ layout: page
 <p>There are no issues tagged <code>{{page.tag | join: '</code> or <code>' }}</code>!
 {% endunless %}
 
+{% unless content == blank %}
+<hr>
 {{ content | markdownify }}
+{% endunless %}
