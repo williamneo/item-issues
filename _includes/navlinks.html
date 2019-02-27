@@ -3,13 +3,11 @@
 {% capture data %}
   {% for link in navigation %}
     {%- if link.tags and link.nav != false -%}
-      {%- for sitetag in site.tags -%}
-      {%- if link.tags contains sitetag[0] -%}
-        {%- assign count = sitetag[1] | size -%}
+      {%- for linktag in link.tags -%}
+        {%- assign count = site.tags[linktag] | size -%}
         {%- if count > 0 -%}
-          {{link.text}}~{{link.url}}~{{link.tags}}|
+          {{link.text}}~{{link.url}}|
         {%- endif -%}
-      {%- endif -%}
       {%- endfor -%}
     {%- elsif link.nav != false -%} {{link.text}}~{{link.url}}|
     {%- endif -%}
