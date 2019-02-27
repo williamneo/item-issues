@@ -3,9 +3,8 @@
 {% capture data %}
   {% for link in navigation %}
     {%- if link.tags and link.nav != false -%}
-      {%- assign target = link.tags | replace: ' ', '' | split: ',' -%}
       {%- for sitetag in site.tags -%}
-      {%- if target contains sitetag[0] -%}
+      {%- if link.tags contains sitetag[0] -%}
         {%- assign count = sitetag[1] | size -%}
         {%- if count > 0 -%}
           {{link.text}}~{{link.url}}~{{link.tags}}|
