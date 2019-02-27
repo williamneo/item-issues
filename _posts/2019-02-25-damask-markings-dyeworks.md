@@ -2,7 +2,6 @@
 layout: post
 title: Damask Markings Dyeworks
 date: 2019-02-25 21:20:09 -0600
-categories: [issue]
 tags: [hanger, misc]
 excerpt: Light Damask Markings Dyeworks items are missing hanger icons.
 ---

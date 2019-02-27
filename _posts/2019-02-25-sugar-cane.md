@@ -3,7 +3,6 @@ layout: post
 title: Sugar Cane
 image: trink_sugarcane
 date: 2019-02-25 22:22:20 -0600
-categories: [issue]
 tags: [activation]
 ---
 

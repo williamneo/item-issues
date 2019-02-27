@@ -2,7 +2,6 @@
 layout: post
 title: Golden Dubloon
 date: 2019-02-25 20:36:38 -0600
-categories: [issue]
 tags: [miscellaneous]
 excerpt: Certain Golden Dubloon items are unobtainable.
 ---

@@ -3,7 +3,6 @@ layout: post
 title: Tarla Plushie
 image: plu_tarla
 date: 2019-02-25 20:33:08 -0600
-categories: [issue]
 tags: [miscellaneous]
 slug: tarlas-shop-plushie
 ---

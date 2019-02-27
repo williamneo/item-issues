@@ -2,7 +2,6 @@
 title: Migrating Off-Site
 date: 2019-02-24 20:38 -0600
 modified: 2019-02-24
-categories: [blog]
 ---
 
 I am attempting to migrate /~Keiynan over to Jekyll (where you are right now!). The reasons for this are many. Here are just a few:

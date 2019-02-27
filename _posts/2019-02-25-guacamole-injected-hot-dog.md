@@ -3,7 +3,6 @@ layout: post
 title: Guacamole Injected Hot Dog
 image: hdo_guacamole_injected
 date: 2019-02-25 22:22:41 -0600
-categories: [issue]
 tags: [activation]
 ---
 

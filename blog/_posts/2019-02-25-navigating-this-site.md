@@ -2,7 +2,6 @@
 layout: post
 date: 2019-02-25 19:19:00 -0600
 title: Navigating This Site
-categories: [blog]
 ---
 
 Navigating this page is slightly different than navigating my petpage. Hopefully nothing here is too hard to find, but herein I explain things that may not be entirely obvious.

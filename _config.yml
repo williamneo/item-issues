@@ -19,5 +19,11 @@ plugins:
 # Content settings
 collections:
   - fixed
+defaults:
+  -
+    scope:
+      path: _posts
+    values:
+      category: issue
 
 permalink: /:categories/:title/

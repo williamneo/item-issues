@@ -3,7 +3,6 @@ layout: post
 title: Red Heart Macaroons
 image: bak_heart_macaroons
 date: 2019-02-25 22:12:28 -0600
-categories: [issue]
 tags: [name, description]
 ---
 

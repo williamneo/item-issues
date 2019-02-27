@@ -2,7 +2,6 @@
 layout: post
 title: Cookies Garland Dyeworks
 date: 2019-02-25 21:16:54 -0600
-categories: [issue]
 tags: [hanger, misc]
 excerpt: Sugar Icing Holiday Cookies Garland Dyeworks items are missing hanger icons.
 ---
