@@ -19,7 +19,7 @@
 
 - text: Description Issues
   url: /description/
-  tags: description,desc
+  tags: [description, desc]
 
 - text: Activation Issues
   url: /activation/
@@ -31,7 +31,7 @@
 
 - text: Miscellaneous Issues
   url: /miscellaneous/
-  tags: miscellaneous,misc
+  tags: [miscellaneous, misc]
   nav: false
 
 - text: Fixed Issues

@@ -1,7 +1,5 @@
-{%- assign target = include.tags | replace: ' ', '' | split: ',' -%}
-{%- assign count = 0 -%}
-{%- assign posts = '' | split: '' -%}
-{%- for tag in target -%}
+{%- assign posts = nil -%} {% comment %} We include this multiple times, so we need to clear it! {% endcomment %}
+{%- for tag in include.tags -%}
   {%- assign q = site.tags | map: tag | first -%}
   {%- assign posts = posts | concat: q -%}
 {%- endfor -%}
