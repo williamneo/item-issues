@@ -16,7 +16,11 @@ layout: default
 
   <div class="post-content">
     {% if page.image %}
-    <p class="text-center"><img src="http://images.neopets.com/items/{{page.image | split: '.' | first}}.gif"></p>
+    <p class="text-center">
+    {%- for image in page.image -%}
+    <img src="http://images.neopets.com/items/{{image | split: '.' | first}}.gif">
+    {%- endfor -%}
+    </p>
     {% endif %}
     {{ content }}
   </div>
