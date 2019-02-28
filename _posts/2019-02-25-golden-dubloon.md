@@ -13,12 +13,12 @@ excerpt: Certain Golden Dubloon items are unobtainable.
 
 | ![Cherry Pop][cherry-pop] | ![Grape Pop][grape-pop] | ![Raspberry Pop][berry-pop] |
 |:-:|:-:|:-:|
-Cherry Pop | Grape Pop | Raspberry Pop
+| Cherry Pop | Grape Pop | Raspberry Pop |
 
 
 | ![Berry Joy Fun Pop][berry-fpop] | ![Mocha Joy Fun Pop][mocha-fpop] |
 |:-:|:-:|
-Berry Joy Fun Pop | Mocha Joy Fun Pop
+| Berry Joy Fun Pop | Mocha Joy Fun Pop |
 
 The "grouped" food items (Joy Fun Pops, Grogs, and Bottles of Pop) at the Golden Dubloon are glitched and only allow the item with the lowest ID to be taken as leftovers.
 This ultimately means that the items pictured should be obtainable but aren't.
