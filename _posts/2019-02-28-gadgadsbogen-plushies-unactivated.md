@@ -6,7 +6,7 @@ date: 2019-02-28 01:24:34 -0600
 tags: [activation]
 ---
 
-The four plushies released ahead of Gadgadsbogen on [February 27, 2019][news] have not been properly activated:
+The four plushies released ahead of Gadgadsbogen on [February 28, 2019][news] have not been properly activated:
 
 * [Roseatte Plushie][roseatte]
 * [Peachpa Plushie][peachpa]
