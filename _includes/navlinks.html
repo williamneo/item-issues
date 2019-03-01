@@ -18,7 +18,7 @@ Jump to :
 {% assign data = data | strip | split: '|' | uniq %}
 {% for link in data %}
 {% assign linkdata = link | split: '~' %}
-{% if page.url == linkdata[1] or (page.url == '/' and linkdata[1] == '.') %}
+{% if page.url == linkdata[1] %}
 <strong>{{linkdata[0]}}</strong>
 {% else %}
 <a href="{{linkdata[1] | relative_url }}">{{linkdata[0]}}</a>

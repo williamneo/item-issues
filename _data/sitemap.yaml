@@ -1,6 +1,6 @@
 - text: Home
-  url: .
-  
+  url: /
+
 - text: About
   url: /about/
   nav: false
@@ -24,7 +24,7 @@
 - text: Activation Issues
   url: /activation/
   tags: activation
-  
+
 - text: Petpet Puddle Issues
   url: /petpets/
   tags: petpets
