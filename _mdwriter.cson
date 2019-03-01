@@ -1,0 +1,23 @@
+siteEngine: "jekyll"
+
+sitePostsDir: "_posts/"
+
+# either add tz offset here or in the frontmatter itself
+frontMatterDate: "{year}-{month}-{day} {hour}:{minute}:{second}"
+frontMatterCustomFields:
+  image: ""
+  tags: ""
+
+# Front matter template
+frontMatter: """
+---
+layout: {layout}
+title: {title}
+image: {image}
+date: {date}
+tags: [{tags}]
+---
+"""
+
+# File extension of posts/drafts
+fileExtension: ".md"
