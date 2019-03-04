@@ -5,25 +5,8 @@ layout: default
 <div class="home">
 
   {{ content }}
+  {% if content != blank %}<hr>{% endif %}
 
-  <h1 class="page-heading">Updates</h1>
-
-  <div class="post-list">
-    {% for post in site.categories.blog limit:3 %}
-      <div class="post">
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-        {{ post.excerpt }}
-      </div>
-    {% endfor %}
-  </div>
-
-  <hr>
-  
   <h1 class="page-heading">Newest Issues</h1>
   <p>The 5 most recently added issues are:</p>
   <div class="post-list">
