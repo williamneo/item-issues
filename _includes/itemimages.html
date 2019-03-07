@@ -1,0 +1,3 @@
+{%- for image in include.images -%}
+<img src="http://images.neopets.com/items/{{image | split: '.' | first}}.gif">
+{%- endfor -%}

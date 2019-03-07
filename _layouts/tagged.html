@@ -14,9 +14,7 @@ layout: page
   <h2>{{post.title}}</h2>
   {% if post.image %}
   <p class="text-center">
-  {%- for image in post.image -%}
-  <img src="http://images.neopets.com/items/{{image | split: '.' | first}}.gif">
-  {%- endfor -%}
+  {% include itemimages.html images=post.image %}
   </p>
   {% endif %}
   {{post.content}}

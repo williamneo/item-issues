@@ -1,0 +1,28 @@
+{% assign count = site.data.duplicates[include.type] | size %}
+{% unless count > 0 %}
+<strong>Error:</strong> No duplicate items of type <code>{{include.type}}</code>
+{% else %}
+<table>
+  <thead>
+    <tr>
+    <th style="text-align:center;">Images</th>
+    <th style="text-align:center;">Name</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for item in site.data.duplicates[include.type] %}
+    <tr>
+    <td style="text-align:center;{%if item.note%}border-bottom:0;{%endif%}">{% include itemimages.html images=item.images %}</td>
+    <td style="text-align:center;{%if item.note%}border-bottom:0;{%endif%}">{{item.name}}</td>
+    </tr>
+    {% if item.note %}
+    <tr>
+    <td colspan="2" style="text-align:center;">
+    <strong>Note:</strong> {{item.note}}
+    </td>
+    </tr>
+    {% endif %}
+  {% endfor %}
+  </tbody>
+</table>
+{% endunless %}

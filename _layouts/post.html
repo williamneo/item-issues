@@ -7,7 +7,7 @@ layout: default
     <h1 class="post-title">{{ page.title | escape }}</h1>
     <p class="post-meta">
       {% if page.categories contains 'blog' %}
-      Posted on {{page.date | date: '%b %d, %Y'}} 
+      Posted on {{page.date | date: '%b %d, %Y'}}
       <br>
       {% endif %}
       <em><strong>Tags:</strong> {{page.categories | concat: page.tags | join: ', '}}</em>
@@ -17,14 +17,12 @@ layout: default
   <div class="post-content">
     {% if page.image %}
     <p class="text-center">
-    {%- for image in page.image -%}
-    <img src="http://images.neopets.com/items/{{image | split: '.' | first}}.gif">
-    {%- endfor -%}
+    {% include itemimages.html images=post.image %}
     </p>
     {% endif %}
     {{ content }}
   </div>
-  
+
   <div class="post-footer">
     {% if page.modified or page.last_modified %}
     <strong>Last modified</strong> : {{page.modified | default: page.last_modified | date: '%b %d, %Y'}}

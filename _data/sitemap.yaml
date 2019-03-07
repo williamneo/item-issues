@@ -34,6 +34,11 @@
   tags: [miscellaneous, misc]
   nav: false
 
+- text: Duplicated Names
+  url: /duplicated-names/
+  section: issues
+  nav: false
+
 - text: Fixed Issues
   url: /fixed/
 
