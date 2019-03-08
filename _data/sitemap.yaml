@@ -32,7 +32,6 @@
 - text: Miscellaneous Issues
   url: /miscellaneous/
   tags: [miscellaneous, misc]
-  nav: false
 
 - text: Fixed Issues
   url: /fixed/
