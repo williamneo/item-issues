@@ -7,7 +7,7 @@ layout: default
     <h1 class="post-title">{{ page.title | escape }}</h1>
     <p class="post-meta">
       {% if page.categories contains 'blog' %}
-      Posted on {{page.date | date: '%b %d, %Y'}} 
+      Posted on {{page.date | date: '%b %d, %Y'}}
       <br>
       {% endif %}
       <em><strong>Tags:</strong> {{page.categories | concat: page.tags | join: ', '}}</em>
