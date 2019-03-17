@@ -15,7 +15,8 @@ layout: page
   {% if post.image %}
   <p class="text-center">
   {%- for image in post.image -%}
-  <img src="http://images.neopets.com/items/{{image | split: '.' | first}}.gif">
+  {%- assign filename = image | split: '.' | first -%}
+  <img src="http://images.neopets.com/items/{{filename}}.gif" alt="{{filename}}">
   {%- endfor -%}
   </p>
   {% endif %}

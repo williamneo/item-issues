@@ -18,13 +18,14 @@ layout: default
     {% if page.image %}
     <p class="text-center">
     {%- for image in page.image -%}
-    <img src="http://images.neopets.com/items/{{image | split: '.' | first}}.gif">
+    {%- assign filename = image | split: '.' | first -%}
+    <img src="http://images.neopets.com/items/{{filename}}.gif" alt="{{filename}}">
     {%- endfor -%}
     </p>
     {% endif %}
     {{ content }}
   </div>
-  
+
   <div class="post-footer">
     {% if page.modified or page.last_modified %}
     <strong>Last modified</strong> : {{page.modified | default: page.last_modified | date: '%b %d, %Y'}}
