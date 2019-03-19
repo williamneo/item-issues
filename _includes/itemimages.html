@@ -1,3 +1,4 @@
 {%- for image in include.images -%}
-<img src="http://images.neopets.com/items/{{image | split: '.' | first}}.gif">
+{%- assign filename = image | split: '.' | first -%}
+<img src="http://images.neopets.com/items/{{filename}}.gif" alt="{{filename}}">
 {%- endfor -%}
