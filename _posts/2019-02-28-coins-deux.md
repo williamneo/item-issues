@@ -12,3 +12,5 @@ tags: [category]
 ---
 
 Joining the previous coins on the "Coins Part Deux" page, the new coins from Coltzan's Shrine (**King Coltzan Coin** and **Coltzans Shrine Coin**) are categorized incorrectly as Stamp (Coins should be Collectible).
+
+_Likely **FIXED**. Currently seeking confirmation on **Coltzans Shrine Coin**._
