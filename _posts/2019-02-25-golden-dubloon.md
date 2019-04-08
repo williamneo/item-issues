@@ -29,7 +29,7 @@ This ultimately means that the items pictured should be obtainable but aren't.
 
 [cherry-pop]: http://images.neopets.com/items/piratefood_14.gif
 [grape-pop]: http://images.neopets.com/items/piratefood_15.gif
-[berry-pop]: http://images.neopets.com/items/piratefood_15.gif
+[berry-pop]: http://images.neopets.com/items/piratefood_16.gif
 
 [berry-fpop]: http://images.neopets.com/items/piratefood_27.gif
 [mocha-fpop]: http://images.neopets.com/items/piratefood_28.gif
