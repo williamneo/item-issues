@@ -33,6 +33,12 @@
   url: /miscellaneous/
   tags: [miscellaneous, misc]
 
+- text: Missing Hangers
+  url: /hangers/
+  tags: [hanger]
+  nav: false
+  section: issues
+
 - text: Fixed Issues
   url: /fixed/
 
