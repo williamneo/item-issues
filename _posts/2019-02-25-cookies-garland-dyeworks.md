@@ -6,5 +6,4 @@ date: 2019-02-25 21:16:54 -0600
 tags: [hanger]
 ---
 
-Sugar Icing Holiday Cookies Garland Dyeworks items are missing hanger icons.
-
+Sugar Icing Holiday Cookies Garland Dyeworks items are missing hanger icons  in the main `/items/` directory. They need the images copied over from the `/items2/` mirror.

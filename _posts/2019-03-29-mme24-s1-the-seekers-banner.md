@@ -6,4 +6,4 @@ date: 2019-03-29 17:34:33 -0500
 tags: [hanger]
 ---
 
-MME24-S1: The Seekers Banner is missing a hanger icon.
+MME24-S1: The Seekers Banner is missing a hanger icon in the main `/items/` directory. It needs the image copied over from the `/items2/` mirror.
